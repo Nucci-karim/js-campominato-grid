@@ -1,0 +1,72 @@
+:root{
+    --numCelle: 10;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    height: 5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20;
+}
+
+#gioca{
+    margin: 0 1rem;
+}
+#logo{
+    display: flex;
+    align-items: center;
+    margin: 0 1rem;
+}
+
+h1{
+    margin: 0 1rem;
+}
+
+footer{
+    height: 5vh;
+    text-align: center;
+    padding: 20px;
+}
+
+main{
+    background-color: rgb(128 255 211);
+    height: calc(100vh - 10vh);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* griglia e caselle */
+
+.griglia{
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+}
+
+.item{
+    width: calc(100% / var(--numCelle));
+    height: calc(100% / var(--numCelle));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.clicked{
+    background-color: rgb(130, 209, 235);
+}
+
+.clicked-bomb{
+    background-color: rgb(197, 27, 27);
+}
